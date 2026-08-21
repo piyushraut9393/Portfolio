@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush Santosh Raut | AI & ML Engineer & Full-Stack Developer Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Dynamic Glowing Ambient Orbs -->
+    <div class="ambient-glow orb-1"></div>
+    <div class="ambient-glow orb-2"></div>
+    <div class="ambient-glow orb-3"></div>
+
+    <!-- Canvas Particle Mesh -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Custom Glowing Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar-container">
+        <nav class="navbar glass-card">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">PIYUSH</span>
+                <span class="logo-accent">.AI</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a></li>
+                <li><a href="#skills" class="nav-link"><i class="fa-solid fa-brain"></i> Skills</a></li>
+                <li><a href="#projects" class="nav-link"><i class="fa-solid fa-cubes"></i> Projects</a></li>
+                <li><a href="#timeline" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+                <li><a href="#terminal" class="nav-link"><i class="fa-solid fa-terminal"></i> Console</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-glow btn-sm">
+                    <span>Hire Me</span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container grid grid-2-col hero-grid">
+                <div class="hero-content">
+                    <div class="status-badge glass-card">
+                        <span class="pulse-dot"></span>
+                        <span>Available for AI & Full-Stack Opportunities</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text glow-text">Piyush Raut</span> <br>
+                        AI & ML Developer.
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        I am a <span class="typewriter-text" id="typewriter"></span><span class="typewriter-cursor">|</span> <br>
+                        building intelligent machine learning models, Python backends, and responsive full-stack applications.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-glow">
+                            <i class="fa-solid fa-rocket"></i>
+                            <span>View My Work</span>
+                        </a>
+                        <a href="#contact" class="btn btn-glass">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <span class="social-label">Find me on:</span>
+                        <div class="social-icons">
+                            <a href="https://github.com/piyushraut9393" target="_blank" class="social-btn glass-card" title="GitHub Profile">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/piyush-raut-3047a9270" target="_blank" class="social-btn glass-card" title="LinkedIn Profile">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:piyushraut9393@gmail.com" class="social-btn glass-card" title="Direct Email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Code Preview Card -->
+                <div class="hero-visual">
+                    <div class="code-window glass-card tilt-element">
+                        <div class="window-header">
+                            <div class="window-controls">
+                                <span class="control red"></span>
+                                <span class="control yellow"></span>
+                                <span class="control green"></span>
+                            </div>
+                            <div class="window-tabs">
+                                <span class="tab active"><i class="fa-brands fa-python"></i> piyush_profile.py</span>
+                                <span class="tab"><i class="fa-solid fa-brain"></i> model_config.json</span>
+                            </div>
+                        </div>
+                        <div class="window-body">
+                            <pre><code><span class="code-keyword">class</span> <span class="code-function">DeveloperProfile</span>:
+  <span class="code-keyword">def</span> <span class="code-function">__init__</span>(<span class="code-variable">self</span>):
+    <span class="code-variable">self</span>.<span class="code-property">name</span> = <span class="code-string">"Piyush Santosh Raut"</span>
+    <span class="code-variable">self</span>.<span class="code-property">role</span> = <span class="code-string">"AI & ML Engineer | Full-Stack"</span>
+    <span class="code-variable">self</span>.<span class="code-property">location</span> = <span class="code-string">"Ambajogai, Maharashtra, India"</span>
+    <span class="code-variable">self</span>.<span class="code-property">internship</span> = <span class="code-string">"Mountreach Solutions Pvt Ltd"</span>
+    <span class="code-variable">self</span>.<span class="code-property">core_skills</span> = [
+      <span class="code-string">"Python & Machine Learning"</span>,
+      <span class="code-string">"Deep Learning & Computer Vision"</span>,
+      <span class="code-string">"Full-Stack Web Development"</span>
+    ]
+
+  <span class="code-keyword">def</span> <span class="code-function">build_future</span>(<span class="code-variable">self</span>):
+    <span class="code-keyword">return</span> <span class="code-string">"Transforming datasets into intelligent AI solutions! 🤖✨"</span>
+
+<span class="code-variable">piyush</span> = <span class="code-function">DeveloperProfile</span>()
+<span class="code-keyword">print</span>(<span class="code-variable">piyush</span>.<span class="code-function">build_future</span>())</code></pre>
+                        </div>
+                        <div class="window-footer">
+                            <span class="branch-tag"><i class="fa-solid fa-code-branch"></i> main</span>
+                            <span class="status-ok"><i class="fa-solid fa-check-double"></i> Mountreach AI Intern</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Counter Ribbon -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid glass-card">
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fa-solid fa-brain"></i></div>
+                        <div class="stat-info">
+                            <h3 class="stat-number" data-target="15">0</h3>
+                            <p class="stat-label">AI & ML Models Trained</p>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fa-solid fa-building-user"></i></div>
+                        <div class="stat-info">
+                            <h3 class="stat-number" data-target="1">0</h3>
+                            <p class="stat-label">Mountreach Internship</p>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fa-brands fa-python"></i></div>
+                        <div class="stat-info">
+                            <h3 class="stat-number" data-target="100">0</h3>
+                            <p class="stat-label">% Python Passion</p>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fa-solid fa-code-commit"></i></div>
+                        <div class="stat-info">
+                            <h3 class="stat-number" data-target="350">0</h3>
+                            <p class="stat-label">Code Commits</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-badge"><i class="fa-solid fa-user-astronaut"></i> Biography</span>
+                    <h2 class="section-title">About <span class="gradient-text">Piyush Raut</span></h2>
+                    <p class="section-subtitle">Bridging Machine Learning algorithms with full-stack software development.</p>
+                </div>
+
+                <div class="grid grid-2-col about-grid">
+                    <div class="about-card glass-card tilt-element">
+                        <div class="about-image-wrapper">
+                            <div class="about-avatar-glow"></div>
+                            <div class="avatar-box">
+                                <img src="profile.jpg" alt="Piyush Santosh Raut" class="profile-img">
+                            </div>
+                        </div>
+                        <div class="about-card-badge">
+                            <i class="fa-solid fa-award"></i>
+                            <span>Piyush Santosh Raut</span>
+                        </div>
+                    </div>
+
+                    <div class="about-bio glass-card">
+                        <h3>Passionate about Intelligent Systems, Python & Web Engineering</h3>
+                        <p>
+                            Hello! I am <strong>Piyush Santosh Raut</strong>, an AI & ML Engineer and Full-Stack Developer based in Ambajogai, Maharashtra, India.
+                        </p>
+                        <p>
+                            I completed an intensive internship at <strong>Mountreach Solutions Pvt Ltd</strong> in the domain of AI & ML Development. During my internship, I worked on training predictive machine learning models, computer vision tasks, and integrating AI algorithms into full-stack web platforms.
+                        </p>
+
+                        <div class="highlights-grid">
+                            <div class="highlight-box glass-card">
+                                <i class="fa-solid fa-brain highlight-icon"></i>
+                                <div>
+                                    <h4>AI Model Training</h4>
+                                    <p>Supervised learning, deep learning & predictive pipelines</p>
+                                </div>
+                            </div>
+                            <div class="highlight-box glass-card">
+                                <i class="fa-brands fa-python highlight-icon"></i>
+                                <div>
+                                    <h4>Python & Web Development</h4>
+                                    <p>FastAPI, Flask, React.js & modern glassmorphic UIs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-badge"><i class="fa-solid fa-gears"></i> Technical Stack</span>
+                    <h2 class="section-title">Skill <span class="gradient-text">Arsenal</span></h2>
+                    <p class="section-subtitle">Core competencies in AI/ML, Python ecosystem, and full-stack development.</p>
+                </div>
+
+                <div class="skills-categories-grid">
+                    <!-- AI & ML -->
+                    <div class="skill-card glass-card tilt-element">
+                        <div class="category-header">
+                            <i class="fa-solid fa-brain category-icon"></i>
+                            <h3>AI & Machine Learning</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Python & Machine Learning</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 95%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Scikit-Learn & Pandas / NumPy</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 92%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>PyTorch / TensorFlow / Deep Learning</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 88%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>OpenCV Computer Vision</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 85%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Full-Stack -->
+                    <div class="skill-card glass-card tilt-element">
+                        <div class="category-header">
+                            <i class="fa-solid fa-code category-icon"></i>
+                            <h3>Full-Stack Engineering</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>HTML5 / Modern CSS / Glassmorphism</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 95%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>JavaScript (ES6+) & React.js</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Flask & FastAPI (Python Web Backends)</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 88%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Node.js & RESTful APIs</span>
+                                    <span>84%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 84%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database & Tools -->
+                    <div class="skill-card glass-card tilt-element">
+                        <div class="category-header">
+                            <i class="fa-solid fa-database category-icon"></i>
+                            <h3>Databases & DevOps Tools</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>PostgreSQL & MySQL Databases</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 88%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Git & GitHub Version Control</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 92%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Jupyter Notebooks & Anaconda</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 95%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Vercel / Cloud Deployment</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 85%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Glowing Skill Badges Cloud -->
+                <div class="skill-badges-wrapper glass-card">
+                    <h4>Frequent Tech Stack Badges</h4>
+                    <div class="badges-cloud">
+                        <span class="tech-badge"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="tech-badge"><i class="fa-solid fa-brain"></i> Machine Learning</span>
+                        <span class="tech-badge"><i class="fa-solid fa-eye"></i> OpenCV</span>
+                        <span class="tech-badge"><i class="fa-brands fa-react"></i> React.js</span>
+                        <span class="tech-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="tech-badge"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+                        <span class="tech-badge"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+                        <span class="tech-badge"><i class="fa-solid fa-chart-pie"></i> Pandas & NumPy</span>
+                        <span class="tech-badge"><i class="fa-solid fa-bolt"></i> FastAPI</span>
+                        <span class="tech-badge"><i class="fa-solid fa-building"></i> Mountreach AI Intern</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-badge"><i class="fa-solid fa-folder-open"></i> GitHub Portfolio</span>
+                    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                    <p class="section-subtitle">AI & ML models, computer vision systems, and full-stack Python web applications.</p>
+                </div>
+
+                <!-- Filter Controls -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="ai">AI & ML</button>
+                    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                    <button class="filter-btn" data-filter="python">Python Tools</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+
+                    <!-- Project Card 1 -->
+                    <div class="project-card glass-card tilt-element" data-category="ai">
+                        <div class="project-preview">
+                            <div class="preview-mockup glow-bg-purple">
+                                <i class="fa-solid fa-notes-medical mockup-icon"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/piyushraut9393" target="_blank" class="overlay-btn" title="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">AI & Machine Learning</span>
+                            <h3 class="project-title">AI Disease Diagnostics & Predictor</h3>
+                            <p class="project-description">
+                                Machine learning diagnostic system analyzing medical metric datasets to predict health conditions with high statistical accuracy.
+                            </p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Scikit-Learn</span>
+                                <span>Pandas</span>
+                                <span>Streamlit</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card glass-card tilt-element" data-category="ai">
+                        <div class="project-preview">
+                            <div class="preview-mockup glow-bg-blue">
+                                <i class="fa-solid fa-eye mockup-icon"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/piyushraut9393" target="_blank" class="overlay-btn" title="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Computer Vision</span>
+                            <h3 class="project-title">Real-Time Facial Recognition System</h3>
+                            <p class="project-description">
+                                Computer vision pipeline utilizing OpenCV and deep learning feature extraction for automated face detection and tracking.
+                            </p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>OpenCV</span>
+                                <span>TensorFlow</span>
+                                <span>Flask</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="project-card glass-card tilt-element" data-category="fullstack">
+                        <div class="project-preview">
+                            <div class="preview-mockup glow-bg-cyan">
+                                <i class="fa-solid fa-chart-line mockup-icon"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/piyushraut9393" target="_blank" class="overlay-btn" title="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Mountreach Solutions Internship</span>
+                            <h3 class="project-title">Mountreach AI Analytics Dashboard</h3>
+                            <p class="project-description">
+                                Interactive dashboard created during Mountreach internship for visualizing machine learning model training metrics and dataset insights.
+                            </p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>React</span>
+                                <span>FastAPI</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 4 -->
+                    <div class="project-card glass-card tilt-element" data-category="python">
+                        <div class="project-preview">
+                            <div class="preview-mockup glow-bg-purple">
+                                <i class="fa-solid fa-wand-magic-sparkles mockup-icon"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/piyushraut9393" target="_blank" class="overlay-btn" title="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Python & NLP</span>
+                            <h3 class="project-title">Smart NLP Text Summarizer</h3>
+                            <p class="project-description">
+                                Natural Language Processing tool for extracting key points and summarizing large documents using TF-IDF and NLP pipelines.
+                            </p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>NLTK</span>
+                                <span>Transformers</span>
+                                <span>FastAPI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section id="timeline" class="timeline-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-badge"><i class="fa-solid fa-timeline"></i> Industry Journey</span>
+                    <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+                    <p class="section-subtitle">My practical experience in AI/ML development and web engineering.</p>
+                </div>
+
+                <div class="timeline-wrapper">
+                    <div class="timeline-line"></div>
+
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item glass-card tilt-element">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Internship Completed</span>
+                            <span class="company-tag">Mountreach Solutions Pvt Ltd</span>
+                        </div>
+                        <h3 class="role-title">AI & ML Developer Intern</h3>
+                        <p class="timeline-desc">
+                            Completed an intensive internship focusing on AI & ML Development. Trained machine learning algorithms, handled dataset preprocessing, developed computer vision scripts, and built interactive web dashboards.
+                        </p>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item glass-card tilt-element">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Academic & Personal Projects</span>
+                            <span class="company-tag">Ambajogai, Maharashtra</span>
+                        </div>
+                        <h3 class="role-title">Full-Stack & Python Developer</h3>
+                        <p class="timeline-desc">
+                            Engineered multiple open-source Python programs, machine learning experiments, and modern full-stack web applications featuring glassmorphic purple/blue aesthetics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Terminal Console -->
+        <section id="terminal" class="terminal-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-badge"><i class="fa-solid fa-terminal"></i> Interactive CLI</span>
+                    <h2 class="section-title">Piyush's <span class="gradient-text">Console</span></h2>
+                    <p class="section-subtitle">Type commands to interact with my personal profile CLI.</p>
+                </div>
+
+                <div class="terminal-box glass-card">
+                    <div class="terminal-bar">
+                        <div class="window-controls">
+                            <span class="control red"></span>
+                            <span class="control yellow"></span>
+                            <span class="control green"></span>
+                        </div>
+                        <div class="terminal-title"><i class="fa-solid fa-terminal"></i> bash - piyush@ambajogai:~</div>
+                    </div>
+                    <div class="terminal-body" id="terminal-body">
+                        <div class="term-line">Welcome to Piyush Santosh Raut's Interactive CLI [v2.0.4]</div>
+                        <div class="term-line">Type <span class="term-highlight">'help'</span> or <span class="term-highlight">'mountreach'</span> for profile info.</div>
+                        <div class="term-line">&nbsp;</div>
+                    </div>
+                    <div class="terminal-input-row">
+                        <span class="prompt-user">piyush@ambajogai:~$</span>
+                        <input type="text" id="terminal-input" placeholder="Type a command (e.g. help, skills, projects, mountreach, contact)..." autocomplete="off" spellcheck="false">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-badge"><i class="fa-solid fa-paper-plane"></i> Contact Me</span>
+                    <h2 class="section-title">Let's Build Something <span class="gradient-text">Intelligent</span></h2>
+                    <p class="section-subtitle">Interested in collaborating on AI/ML projects or hiring me? Drop a message!</p>
+                </div>
+
+                <div class="grid grid-2-col contact-grid">
+                    <div class="contact-info glass-card">
+                        <h3>Contact Information</h3>
+                        <p>Feel free to reach out via email or through the form. I'm open to discussing AI/ML roles, full-stack projects, or freelance opportunities.</p>
+
+                        <div class="contact-methods">
+                            <div class="method-item">
+                                <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <span class="method-label">Direct Email</span>
+                                    <h4 class="method-value" id="email-text">piyushraut9393@gmail.com</h4>
+                                </div>
+                                <button class="copy-btn" id="copy-email-btn" title="Copy Email">
+                                    <i class="fa-solid fa-copy"></i>
+                                </button>
+                            </div>
+
+                            <div class="method-item">
+                                <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <span class="method-label">Location</span>
+                                    <h4 class="method-value">Ambajogai, Maharashtra, India</h4>
+                                </div>
+                            </div>
+
+                            <div class="method-item">
+                                <div class="method-icon"><i class="fa-brands fa-github"></i></div>
+                                <div>
+                                    <span class="method-label">GitHub Profile</span>
+                                    <h4 class="method-value"><a href="https://github.com/piyushraut9393" target="_blank" style="color: var(--cyan-accent);">github.com/piyushraut9393</a></h4>
+                                </div>
+                            </div>
+
+                            <div class="method-item">
+                                <div class="method-icon"><i class="fa-brands fa-linkedin"></i></div>
+                                <div>
+                                    <span class="method-label">LinkedIn Profile</span>
+                                    <h4 class="method-value"><a href="https://www.linkedin.com/in/piyush-raut-3047a9270" target="_blank" style="color: var(--cyan-accent);">Piyush Raut on LinkedIn</a></h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-status-card glass-card">
+                            <div class="status-indicator"></div>
+                            <span>Completed Mountreach Internship & Open to New Opportunities.</span>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form class="contact-form glass-card" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" required placeholder="Your Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" required placeholder="your.email@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" required placeholder="AI/ML Project / Full-Stack Hire Request">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required placeholder="Tell me about your project or opportunity..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-glow form-submit-btn">
+                            <span>Send Message to Piyush</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                        <div id="form-feedback" class="form-feedback"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer glass-card">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <a href="#hero" class="nav-logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">PIYUSH</span>
+                    <span class="logo-accent">.AI</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </a>
+                <p>&copy; 2026 Piyush Santosh Raut. Built with Purple/Blue Glassmorphism & Glowing AI Vibe.</p>
+            </div>
+
+            <a href="#hero" class="back-to-top glass-card" title="Back to Top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
